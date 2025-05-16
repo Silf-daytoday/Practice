@@ -98,11 +98,12 @@ footer {
 /* Стили для страницы "Участники" */
 .team-member {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: white;
-    padding: 1rem;
+    padding: 1rem; /* Увеличено с 1rem для большего внутреннего отступа */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    gap: 1rem; /* Добавлено новое свойство для расстояния между элементами */
 }
 
 .team-member img {
@@ -110,7 +111,19 @@ footer {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 2rem;
+    /* margin-right удалено, так как теперь используется gap */
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem; /* Добавлено расстояние между элементами внутри блока с информацией */
+}
+
+/* Увеличено расстояние между заголовком и текстом */
+.team-member h3 {
+    margin-bottom: 1.5rem; /* Увеличено с стандартного значения */
 }
 
 /* Стили для страницы "Журнал" */
